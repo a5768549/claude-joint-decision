@@ -1,0 +1,21 @@
+{
+  "name": "claude-joint-decision",
+  "version": "0.1.0",
+  "description": "讓 Codex 在修改內容前後徵詢 Claude 的獨立第二意見。",
+  "author": {
+    "name": "Star1Age"
+  },
+  "license": "MIT",
+  "keywords": ["claude", "decision", "review", "second-opinion", "coding"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Claude Joint Decision",
+    "shortDescription": "修改前後取得 Claude 第二意見",
+    "longDescription": "提供唯讀的 Claude 方案決策與 diff 風險審查工具。Claude 只提供第二意見，不會直接修改檔案；Codex 保留最終決策權。",
+    "developerName": "Star1Age",
+    "category": "Productivity",
+    "capabilities": ["Read", "Review"],
+    "defaultPrompt": "在修改內容前請先徵詢 Claude 的第二意見。"
+  }
+}

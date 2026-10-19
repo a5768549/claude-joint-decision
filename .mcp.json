@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "claude_joint_decision": {
+      "command": "node",
+      "args": ["./scripts/server.mjs"],
+      "cwd": ".",
+      "env_vars": [
+        "JOINT_DECISION_API_KEY",
+        "JOINT_DECISION_BASE_URL",
+        "JOINT_DECISION_MODEL",
+        "JOINT_DECISION_CREDENTIALS",
+        "USERPROFILE",
+        "HOME",
+        "PATH"
+      ],
+      "startup_timeout_sec": 10,
+      "tool_timeout_sec": 180
+    }
+  }
+}
